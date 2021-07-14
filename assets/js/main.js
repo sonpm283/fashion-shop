@@ -2,6 +2,7 @@ $(document).ready(function() {
     mainSlide.init()
     menuMobile.init()
     fixedNav.init()
+    tabProduct.init()
 });
 
 // main slide
@@ -50,12 +51,34 @@ const fixedNav = {
     },
     fixedNav: function() {
         $(window).scroll(function fix_element() {
-            $('.header').css(
+            $('.nav').css(
               $(window).scrollTop() > 100
-                ? { 'position': 'fixed', 'top': '0', 'right': '0', 'left': '0'}
+                ? { 'position': 'fixed', 'top': '0', 'right': '0', 'left': '0','z-index': '99'}
                 : { 'position': 'relative', 'top': 'auto' }
             );
             return fix_element;
           });
+    }
+}
+
+
+// tab product
+
+const tabProduct = {
+    init: function() {
+        this.tabProduct();
+    },
+    tabProduct: function() {
+        var tabs  = $(".tab")
+        var panes = $('.pane')
+        tabs.click(function (e) {
+            tabs.removeClass("active")
+            $(this).addClass("active")
+            panes.hide();
+            var pane = $(this).attr('data-pane');
+            $(pane).fadeIn(500);
+            e.preventDefault();
+        });
+        $(".product-tab li:first a").click();
     }
 }

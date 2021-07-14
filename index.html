@@ -1,225 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fashion Store</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="header d-flex justify-content-between align-items-center">
-                <a href="#" class="header-logo">
-                    <img src="assets/images/logo.png" alt="logo-images">
-                </a>
-                <h1 class="header-title d-lg-block d-none ">Đồng phục học sinh</h1>
-                <div class="header-action d-lg-block d-none">
-                    <i class='bx bx-search'></i>
-                    <i class='bx bx-user-circle'></i>
-                    <i class='bx bx-shopping-bag'></i>
-                </div>
-                <div class="menu-btn d-lg-none d-block">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </div>
+      <div class="container">
+        <div class="header d-flex justify-content-between align-items-center">
+          <a href="#" class="header-logo">
+            <img src="assets/images/logo.png" alt="logo-images" />
+          </a>
+          <h1 class="header-title d-lg-block d-none">Đồng phục học sinh</h1>
+          <div class="header-action d-lg-block d-none">
+            <i class="bx bx-search"></i>
+            <i class="bx bx-user-circle"></i>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+          <div class="menu-btn d-lg-none d-block">
+            <i class="bx bx-menu"></i>
+          </div>
         </div>
-        <nav class="nav d-lg-block d-none">
-            <div class="container">
-                <div class="navbar-menu">
-                    <ul class="menu-list d-flex align-items-center justify-content">
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Giới thiệu</a>
-                        </li>
-                        <li class="menu-item has-submenu">
-                            <a href="#" class="menu-link">Đồng phục học sinh</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="#" class="active">Menu 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu 1</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item has-submenu">
-                            <a href="#" class="menu-link">Bảo hộ lao động</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="#" class="active">Menu 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu 1</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item has-submenu">
-                            <a href="#" class="menu-link">Đồ vật tư tiêu hao phòng sạch</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="#" class="active">Menu 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Menu 1</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Liên hệ</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      </div>
+      <nav class="nav d-lg-block d-none">
+        <div class="container">
+          <div class="navbar-menu">
+            <ul class="menu-list d-flex align-items-center justify-content">
+              <li class="menu-item">
+                <a href="#" class="menu-link">Giới thiệu</a>
+              </li>
+              <li class="menu-item has-submenu">
+                <a href="#" class="menu-link">Đồng phục học sinh</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#" class="active">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu 1</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <a href="#" class="menu-link">Bảo hộ lao động</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#" class="active">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu 1</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item has-submenu">
+                <a href="#" class="menu-link">Đồ vật tư tiêu hao phòng sạch</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="#" class="active">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu 1</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-<!-- End Header -->
-<!-- Menu mobile -->
+    <!-- End Header -->
+    <!-- Menu mobile -->
     <div class="menumobile">
-        <div class="menumobile-overlay"></div>
-        <ul class="menumobile-list">
-            <li >
-                <a href="#">Giới thiệu</a>
-            </li>
+      <div class="menumobile-overlay"></div>
+      <ul class="menumobile-list">
+        <li>
+          <a href="#">Giới thiệu</a>
+        </li>
 
-            <li >
-                <a href="#">Đồng phục học sinh</a>
-            </li>
-            <li >
-                <a href="#">Bảo hộ lao động</a>
-            </li>
-            <li >
-                <a href="#">Đồ vật tư tiêu hao phòng sạch</a>
-            </li>
-            <li >
-                <a href="#">Liên hệ</a>
-            </li>
-            <li>
-                <div class="header-action">
-                    <i class='bx bx-search'></i>
-                    <i class='bx bx-user-circle'></i>
-                    <i class='bx bx-shopping-bag'></i>
-                </div>
-            </li>
-        </ul>
+        <li>
+          <a href="#">Đồng phục học sinh</a>
+        </li>
+        <li>
+          <a href="#">Bảo hộ lao động</a>
+        </li>
+        <li>
+          <a href="#">Đồ vật tư tiêu hao phòng sạch</a>
+        </li>
+        <li>
+          <a href="#">Liên hệ</a>
+        </li>
+        <li>
+          <div class="header-action">
+            <i class="bx bx-search"></i>
+            <i class="bx bx-user-circle"></i>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </li>
+      </ul>
     </div>
-<!-- End mobile -->
+    <!-- End mobile -->
 
-
-<!-- Main slider -->
+    <!-- Main slider -->
     <section class="slide">
-        <div class="owl-carousel" id="main-slide">
-            <div class="slide-item">
-                <img src="assets/images/slide-img.jpg" alt="">
-            </div>
-            <div class="slide-item">
-                <img src="assets/images/slide-img.jpg" alt="">
-            </div>
-            <div class="slide-item">
-                <img src="assets/images/slide-img.jpg" alt="">
-            </div>
+      <div class="owl-carousel" id="main-slide">
+        <div class="slide-item">
+          <img src="assets/images/slide-img.jpg" alt="" />
         </div>
+        <div class="slide-item">
+          <img src="assets/images/slide-img.jpg" alt="" />
+        </div>
+        <div class="slide-item">
+          <img src="assets/images/slide-img.jpg" alt="" />
+        </div>
+      </div>
     </section>
-<!-- End main slider -->
+    <!-- End main slider -->
 
-<!-- Category -->
+    <!-- Category -->
     <section class="category">
-        <div class="container">
-            <h2 class="category-title text-center">Bộ sưu tập</h2>
-            <div class="category-wrap">
-                <div class="category-item wid-29 d-flex justify-content-between">
-                    <div class="category-img">
-                        <img src="assets/images/cat-img-1.jpg" alt="">
-                        <div class="category-img-content">
-                            <h3>Đồng phục bé trai</h3>
-                            <p><span>250</span> sản phẩm</p>
-                        </div>
-                    </div>
-                    <div class="category-img">
-                        <img src="assets/images/cat-img-2.jpg" alt="">
-                        <div class="category-img-content">
-                            <h3>Đồng phục bé gái</h3>
-                            <p><span>250</span> sản phẩm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="category-item wid-22">
-                    <div class="category-img">
-                        <img src="assets/images/cat-img-3.jpg" alt="">
-                        <div class="category-img-content">
-                            <h3>Đồng phục học sinh cấp 3</h3>
-                            <p><span>250</span> sản phẩm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="category-item wid-20">
-                    <div class="category-img">
-                        <img src="assets/images/cat-img-4.jpg" alt="">
-                        <div class="category-img-content">
-                            <h3>Đồng phục học sinh cấp 2</h3>
-                            <p><span>250</span> sản phẩm</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="category-item wid-29 d-flex justify-content-between">
-                    <div class="category-img">
-                        <img src="assets/images/cat-img-1.jpg" alt="">
-                        <div class="category-img-content">
-                            <h3>Đồng phục học sinh cấp 1</h3>
-                            <p><span>250</span> sản phẩm</p>
-                        </div>
-                    </div>
-                    <div class="category-img">
-                        <img src="assets/images/cat-img-2.jpg" alt="">
-                        <div class="category-img-content">
-                            <h3>Đồng phục học sinh bigsize</h3>
-                            <p><span>250</span> sản phẩm</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="category-title text-center">Bộ sưu tập</h2>
+        <div class="category-wrap">
+          <div class="category-item wid-29 d-flex justify-content-between">
+            <div class="category-img">
+              <img src="assets/images/cat-img-1.jpg" alt="" />
+              <div class="category-img-content">
+                <h3>Đồng phục bé trai</h3>
+                <p><span>250</span> sản phẩm</p>
+              </div>
             </div>
+            <div class="category-img">
+              <img src="assets/images/cat-img-2.jpg" alt="" />
+              <div class="category-img-content">
+                <h3>Đồng phục bé gái</h3>
+                <p><span>250</span> sản phẩm</p>
+              </div>
+            </div>
+          </div>
+          <div class="category-item wid-22">
+            <div class="category-img">
+              <img src="assets/images/cat-img-3.jpg" alt="" />
+              <div class="category-img-content">
+                <h3>Đồng phục học sinh cấp 3</h3>
+                <p><span>250</span> sản phẩm</p>
+              </div>
+            </div>
+          </div>
+          <div class="category-item wid-20">
+            <div class="category-img">
+              <img src="assets/images/cat-img-4.jpg" alt="" />
+              <div class="category-img-content">
+                <h3>Đồng phục học sinh cấp 2</h3>
+                <p><span>250</span> sản phẩm</p>
+              </div>
+            </div>
+          </div>
+          <div class="category-item wid-29 d-flex justify-content-between">
+            <div class="category-img">
+              <img src="assets/images/cat-img-1.jpg" alt="" />
+              <div class="category-img-content">
+                <h3>Đồng phục học sinh cấp 1</h3>
+                <p><span>250</span> sản phẩm</p>
+              </div>
+            </div>
+            <div class="category-img">
+              <img src="assets/images/cat-img-2.jpg" alt="" />
+              <div class="category-img-content">
+                <h3>Đồng phục học sinh bigsize</h3>
+                <p><span>250</span> sản phẩm</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-<!-- End category -->
+    <!-- End category -->
+    <!-- Product -->
+    <section class="product">
+      <div class="container">
+        <ul
+          class="product-tab d-flex justify-content-center align-items-center"
+        >
+          <li>
+            <a href="#" class="tab" data-pane="#pane1">Mới nhất</a>
+          </li>
+          <li><a href="#" class="tab" data-pane="#pane2">Đặc sắc</a></li>
+          <li><a href="#" class="tab" data-pane="#pane3">Bán chạy</a></li>
+        </ul>
+        <div class="row pane" id="pane1">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-2.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-3.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-4.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-5.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-6.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-7.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-8.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+         <div class="viewmore">
+            <a href="#" class="view-more">Xem thêm >></a>
+         </div>
+        </div>
+        <div class="row pane" id="pane2">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pane" id="pane3">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product-item">
+              <div class="product-img">
+                <a href="#"><img src="assets/images/pro-img-1.jpg" alt="" /></a>
+              </div>
+              <div class="product-content">
+                <h3 class="product-title">
+                  <a href="">Áo sơ mi học sinh nam cấp 2, cấp 3 Tdp014</a>
+                </h3>
+                <p class="product-price">550.000Đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Product -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
