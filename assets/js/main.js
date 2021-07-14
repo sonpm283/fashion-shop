@@ -3,6 +3,7 @@ $(document).ready(function() {
     menuMobile.init()
     fixedNav.init()
     tabProduct.init()
+    feedbackSlide.init()
 });
 
 // main slide
@@ -22,6 +23,27 @@ const mainSlide = {
         })
     }
 }
+
+
+// feedback slide
+
+const feedbackSlide = {
+    init : function () {
+        this.feedbackSlide();
+    },
+    feedbackSlide: function() {
+        $("#feedback-slide").owlCarousel({
+            items: 1,
+            dots: false,
+            loop: true,
+            nav: true,
+            autoplay: true,
+            navText:navText,
+            autoplayTimeout:5000
+        })
+    }
+}
+
 
 // menu mobile 
 const menuMobile = {
@@ -63,7 +85,6 @@ const fixedNav = {
 
 
 // tab product
-
 const tabProduct = {
     init: function() {
         this.tabProduct();
