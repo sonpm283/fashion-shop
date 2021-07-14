@@ -1,0 +1,189 @@
+/* ===============  Setting  =============== */
+
+:root {
+    --roboto-font: 'Roboto', sans-serif;
+    --utm-avo-font: UTM Avo;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--roboto-font);
+    font-size: 14px;
+    line-height: 1;
+}
+
+input,
+button,
+select,
+textarea {
+    outline: none;
+    font-family: var(--roboto-font);
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 400;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    line-height: normal;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+image {
+    max-width: 100%;
+    display: block;
+}
+
+/* ===============  Fonts Import  =============== */
+
+@font-face {
+    font-family: UTM Avo;
+    src: url(/assets/fonts/UTM\ Avo.ttf);
+}
+
+/* =============== Header =============== */
+
+.header-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2e2d3e;
+    font-family: var(--utm-avo-font);
+}
+
+.header-action i {
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+    color: #0b0b0b;
+}
+
+.header-action i ~ i {
+    margin-left: 15px;
+}
+
+/* =============== Nav bar =============== */
+
+.nav {
+    background-color: #0fb7a4;
+    padding: 15px 0;
+}
+
+.menu-link {
+    color: #f5f6f9;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.menu-item:not(:first-child) {
+    margin-left: 70px;
+}
+
+.menu-link {
+    transition: all .25s ease-in-out;
+}
+
+.menu-link:hover {
+    color: #f5f6f9;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.has-submenu:hover .submenu {
+    opacity: .9;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu {
+    position: absolute;
+    width: 240px;
+    padding: 15px 10px;
+    box-shadow: 0 14px 40px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    top: 30px;
+    transform: translateY(20px);
+    transition: all .3s ease;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 100%;
+    left: 0;
+    top: -15px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 0 10px;
+    line-height: 40px;
+    transition: all .35s ease-in-out;
+    font-weight: 500;
+}
+
+.submenu li a.active,
+.submenu li a:hover {
+    color: #0fb7a4;
+}
+
+.submenu li a:hover {
+    transform: translateX(10px);
+}
+
+/* ===============  Media Queries  =============== */
+
+@media screen and (min-width: 1350px) {
+    .container {
+        max-width: 1230px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .menu-item:not(:first-child) {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .menu-item:not(:first-child) {
+        margin-left: 50px;
+    }
+}
+
+ 
