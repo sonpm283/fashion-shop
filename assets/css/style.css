@@ -428,11 +428,13 @@ img {
 }
 
 /* ===============  Feedback  =============== */
+
 .feedback {
-    background: url(/assets/images/feedback-bg.jpg) no-repeat center/cover;;
+    background: url(/assets/images/feedback-bg.jpg) no-repeat center/cover;
     width: 100%;
     height: 395px;
     padding-top: 45px;
+    box-shadow: inset rgb(0 0 0 / 45%) 0px 20px 20px -20px, inset rgb(0 0 0 / 45%) 0px -20px 20px -20px;
 }
 
 .feedback .page-heading {
@@ -487,7 +489,16 @@ img {
     max-width: 450px;
     line-height: 36px;
     margin-left: 90px;
+    font-size: 16px;
+    text-align: justify;
+    word-spacing: 1;
 }
+
+/* ===============  News  =============== */
+.news {
+    padding-top: 40px;
+}
+
 /* ===============  Media Queries  =============== */
 
 @media screen and (min-width: 1350px) {
