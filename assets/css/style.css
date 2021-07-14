@@ -3,6 +3,7 @@
 :root {
     --roboto-font: 'Roboto', sans-serif;
     --utm-avo-font: UTM Avo;
+    --sfu-font: SFU;
 }
 
 *,
@@ -57,7 +58,7 @@ a:hover {
     color: unset;
 }
 
-image {
+img {
     max-width: 100%;
     display: block;
 }
@@ -67,6 +68,11 @@ image {
 @font-face {
     font-family: UTM Avo;
     src: url(/assets/fonts/UTM\ Avo.ttf);
+}
+
+@font-face {
+    font-family: SFU;
+    src: url(/assets/fonts/SFUInsigniaRegular.TTF);
 }
 
 /* =============== Header =============== */
@@ -88,8 +94,6 @@ image {
 .header-action i ~ i {
     margin-left: 15px;
 }
-
-/* =============== Nav bar =============== */
 
 .nav {
     background-color: #0fb7a4;
@@ -164,6 +168,146 @@ image {
     transform: translateX(10px);
 }
 
+.menu-btn i  {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* ===============  Menu mobile  =============== */
+
+.menumobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .25s ease-in-out;
+}
+
+.menumobile.active {
+    opacity: 1;
+    visibility: visible
+}
+
+.menumobile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    z-index: 98;
+    transition: .3s ease;
+}
+
+.menumobile.active .menumobile-list {
+    transform: translateX(0);
+}
+
+.menumobile-list {
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    height: 100vh;
+    padding: 15px;
+    width: 280px;
+    transform: translateX(100%);
+    z-index: 99;
+    transition: all .25s  ease-in-out;
+}
+
+.menumobile-list li a {
+    text-transform: uppercase;
+    padding: 0 10px;
+    line-height: 50px;
+    display: block;
+}
+
+/* ===============  Category =============== */
+
+.category {
+    margin: 45px 0;
+}
+
+.category-title {
+    font-size: 36px;
+    color: #333333;
+    font-family: var(--utm-avo-font);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.category-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -18px;
+}
+
+.category-item {
+    margin-left: 18px;
+    height: 400px;
+}
+
+.category-img {
+    position: relative;
+}
+
+
+.category-img img {
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.category-img-content {
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+}
+
+.category-img-content h3 {
+    font-family: var(--sfu-font);
+    font-size: 24px;
+    color: #0480ea;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    margin-bottom: 10px;
+}
+
+.category-img-content p {
+    color: #000000;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.wid-29 {
+    flex-direction: column;
+    width: calc(29% - 18px);
+}
+
+.wid-29 img {
+    height: 190px;
+}
+
+.wid-22 {
+    width:  calc(22% - 18px);
+}
+
+.wid-22 img,
+.wid-20 img {
+    height: 400px;
+}
+
+.wid-20 {
+    width:  calc(20% - 18px);
+}
+
+
 /* ===============  Media Queries  =============== */
 
 @media screen and (min-width: 1350px) {
@@ -183,6 +327,24 @@ image {
 @media screen and (max-width: 991px) {
     .menu-item:not(:first-child) {
         margin-left: 50px;
+    }
+
+    .category-title {
+        font-size: 30px;
+    }
+
+    .category-item {
+        width: 100%;
+        height: unset;
+    }
+    
+    .category-img {
+        margin-bottom: 20px;
+    }
+
+    .category-img img {
+        width: 100%;
+        height: unset;
     }
 }
 
