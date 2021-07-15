@@ -826,6 +826,13 @@ img {
   opacity: 1;
   visibility: visible;
 }
+.copyright {
+  color: #fff;
+  font-size: 12px;
+  border-top: 1px dashed #fff;
+  margin-top: 25px;
+  padding: 20px 0;
+}
 /* ===============  Media Queries  =============== */
 
 @media screen and (min-width: 1350px) {
@@ -958,7 +965,7 @@ img {
   .form-gr input {
     width: 100%;
   }
-  
+
   .back-top {
     right: 20px;
     bottom: 30px;
