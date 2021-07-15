@@ -24,9 +24,7 @@ const mainSlide = {
     }
 }
 
-
 // feedback slide
-
 const feedbackSlide = {
     init : function () {
         this.feedbackSlide();
@@ -39,11 +37,10 @@ const feedbackSlide = {
             nav: true,
             autoplay: true,
             navText:navText,
-            autoplayTimeout:5000
+            autoplayTimeout:5000,
         })
     }
 }
-
 
 // menu mobile 
 const menuMobile = {
@@ -51,7 +48,7 @@ const menuMobile = {
         this.menuMobile()
     },
     menuMobile: function() {
-        const menuBtn = $(".menu-btn")
+        const menuBtn = $(".menu-btn .hamberger")
         const menuMobile = $(".menumobile")
         const menuOverlay = $(".menumobile-overlay")
 
@@ -66,23 +63,20 @@ const menuMobile = {
 }
 
 // fixed nav 
-
 const fixedNav = {
     init: function() {
         this.fixedNav()
     },
     fixedNav: function() {
-        $(window).scroll(function fix_element() {
-            $('.nav').css(
-              $(window).scrollTop() > 100
-                ? { 'position': 'fixed', 'top': '0', 'right': '0', 'left': '0','z-index': '99'}
-                : { 'position': 'relative', 'top': 'auto' }
-            );
-            return fix_element;
+        $(window).scroll(function() {
+            if($(window).scrollTop() > 100) {
+                $('.header').addClass('active')
+            }else {
+                $('.header').removeClass('active')
+            }
           });
     }
 }
-
 
 // tab product
 const tabProduct = {
