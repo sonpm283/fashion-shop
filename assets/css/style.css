@@ -707,7 +707,15 @@ img {
 /* ===============  Footer =============== */
 
 .footer {
+  padding-top: 30px;
+}
+.footer,
+.newletter {
   background: #00447f;
+}
+
+.newletter {
+  border-bottom: 1px solid #fff;
 }
 
 .newsletter-title {
@@ -752,6 +760,38 @@ img {
 .footer-form {
   justify-content: flex-end;
 }
+
+.footer-title {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.footer p {
+  font-size: 13px;
+  color: #fff;
+  line-height: 24px;
+}
+
+.footer p  i {
+  font-size: 15px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.fb-img {
+  justify-content: flex-end;
+}
+
+.fb-img img {
+  width: 272px;
+  height: 168px;
+  object-fit: cover;
+}
+
+
 
 /* ===============  Media Queries  =============== */
 
@@ -825,8 +865,17 @@ img {
   .footer-form {
     justify-content: center;
   }
+
+  .fb-img {
+    justify-content: flex-start;
+  }
 }
 
+@media screen and (max-width: 767px) {
+  .fb-img {
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 480px) {
   .product-tab li a {
     font-size: 12px;
@@ -871,5 +920,9 @@ img {
   .showroom-btn  {
     padding: 10px 30px;
     margin-top: 10px;
+  }
+
+  .form-gr input {
+    width: 100%;
   }
 }
