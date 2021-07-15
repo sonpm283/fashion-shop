@@ -4,6 +4,7 @@ $(document).ready(function() {
     fixedNav.init()
     tabProduct.init()
     feedbackSlide.init()
+    partnerSlide.init()
 });
 
 // main slide
@@ -32,6 +33,23 @@ const feedbackSlide = {
     feedbackSlide: function() {
         $("#feedback-slide").owlCarousel({
             items: 1,
+            dots: false,
+            loop: true,
+            nav: true,
+            autoplay: true,
+            navText:navText,
+            autoplayTimeout:5000,
+        })
+    }
+}
+
+const partnerSlide = {
+    init : function () {
+        this.partnerSlide();
+    },
+    partnerSlide: function() {
+        $("#partner-slide").owlCarousel({
+            items: 5,
             dots: false,
             loop: true,
             nav: true,
