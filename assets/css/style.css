@@ -958,4 +958,9 @@ img {
   .form-gr input {
     width: 100%;
   }
+  
+  .back-top {
+    right: 20px;
+    bottom: 30px;
+  }
 }
