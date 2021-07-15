@@ -104,8 +104,10 @@ const fixedNav = {
         $(window).scroll(function() {
             if($(window).scrollTop() > 100) {
                 $('.header').addClass('active')
+                $('.back-top').addClass('active')
             }else {
                 $('.header').removeClass('active')
+                $('.back-top').removeClass('active')
             }
           });
     }

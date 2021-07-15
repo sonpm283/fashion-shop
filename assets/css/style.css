@@ -7,6 +7,10 @@
   --main-color: #0fb7a4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -55,7 +59,7 @@ input {
 }
 
 a,
-a:hover {
+a:hover{
   text-decoration: none;
   color: unset;
 }
@@ -377,6 +381,10 @@ img {
 
 .wid-29 img {
   height: 190px;
+}
+
+.wid-29 .category-img-content {
+  width: 50%;
 }
 
 .wid-22 {
@@ -791,8 +799,33 @@ img {
   object-fit: cover;
 }
 
+.back-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease-in-out;
+  background: var(--main-color);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+.back-top:hover {
+  text-decoration: none;
+  color: #fff;
+}
 
 
+.back-top.active {
+  opacity: 1;
+  visibility: visible;
+}
 /* ===============  Media Queries  =============== */
 
 @media screen and (min-width: 1350px) {
