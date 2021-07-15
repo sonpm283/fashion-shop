@@ -53,9 +53,24 @@ const partnerSlide = {
             dots: false,
             loop: true,
             nav: true,
-            autoplay: true,
+            autoplay: false,
             navText:navText,
+            margin: 15,
             autoplayTimeout:5000,
+            responsive:{
+                0:{
+                    items:3
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+                ,1200:{
+                    items:5
+                }
+            }
         })
     }
 }

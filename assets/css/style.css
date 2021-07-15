@@ -630,12 +630,36 @@ img {
 
 
 .partner {
-  margin-top: 35px;
+  margin-top: 60px;
+}
+
+
+.partner-slide  {
+  position: relative;
+}
+
+.partner-slide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: -25px;
+  background-color: #eeeeee;
 }
 
 
 .partner .owl-carousel .owl-item img {
   width: unset;
+  margin: 0 auto;
+}
+
+.partner .nav-center .owl-nav button.owl-prev {
+  left: 0;
+}
+
+.partner  .nav-center .owl-nav button.owl-next {
+  right: 0;
 }
 /* ===============  Media Queries  =============== */
 
